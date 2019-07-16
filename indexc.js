@@ -68,14 +68,14 @@ function animateblock()
     c.font='30px Helvetica';
     c.fillText('SCORE:'+s,10,40);
 
-   c.fillRect(x,y-(i*700),w,30);
+   c.fillRect(x,y-(i*760),w,30);
    
   
     if(y>400)
     {
    c.fillRect(x1,y1,w1,30);
    y1+=j1;
-   if(y1>=700)
+   if(y1>=760)
 {
    x1 = Math.floor((Math.random() * 270)+260);
    y1=0;
@@ -180,7 +180,7 @@ cy2=cy+(r*Math.sin(t*(Math.PI)/180));
 
 y+=j1;
 
-if(y>=(700*k))
+if(y>=(750*k))
 {     i++;
       k++;   
     x = Math.floor((Math.random() * 100) + 80);
@@ -190,7 +190,7 @@ if(y>=(700*k))
 
 if(p==0){
 
-  if(( Math.abs(cy1-y+(i*700))<=20 && (cx1>=(x) && cx1<=(x+w)))||( Math.abs(cx1-x)<=20  && (cy1>=(y-(i*700)) && cy1<=(y-(i*700)+30)))||(Math.abs(cy1-y+(i*700))==(Math.sqrt(2)*20) && Math.abs(-(x+w)+cx1)==(Math.sqrt(2)*20)))
+  if(( Math.abs(cy1-y+(i*760))<=20 && (cx1>=(x) && cx1<=(x+w)))||( Math.abs(cx1-x)<=20  && (cy1>=(y-(i*760)) && cy1<=(y-(i*760)+30)))||(Math.abs(cy1-y+(i*760))==(Math.sqrt(2)*20) && Math.abs(-(x+w)+cx1)==(Math.sqrt(2)*20)))
   {
       cancelAnimationFrame(cancelMe);
       c.fillStyle = '#ffffff';
@@ -201,7 +201,7 @@ if(p==0){
 
 if (p1!=1)
 {
-if( Math.abs(cy2-y+(i*700))<=20 && (cx2>=(x) && cx2<=(x+w)))
+if( Math.abs(cy2-y+(i*760))<=20 && (cx2>=(x) && cx2<=(x+w)))
   {
       cancelAnimationFrame(cancelMe);
       c.fillStyle = '#ffffff';
@@ -210,7 +210,7 @@ if( Math.abs(cy2-y+(i*700))<=20 && (cx2>=(x) && cx2<=(x+w)))
 
   }
 
-  if( Math.abs(cx2-x)<=20  && (cy2>=(y-(i*700)) && cy2<=(y-(i*700)+30)))
+  if( Math.abs(cx2-x)<=20  && (cy2>=(y-(i*760)) && cy2<=(y-(i*760)+30)))
   {
       cancelAnimationFrame(cancelMe);
       c.fillStyle = '#ffffff';
@@ -220,7 +220,7 @@ if( Math.abs(cy2-y+(i*700))<=20 && (cx2>=(x) && cx2<=(x+w)))
 
 
 
-if(Math.abs(cy2-y+(i*700))==(Math.sqrt(2)*20) && Math.abs(-(x+w)+cx2)==(Math.sqrt(2)*20))
+if(Math.abs(cy2-y+(i*760))==(Math.sqrt(2)*20) && Math.abs(-(x+w)+cx2)==(Math.sqrt(2)*20))
 {
   cancelAnimationFrame(cancelMe);
   c.fillStyle = '#ffffff';
@@ -243,7 +243,7 @@ if(yh!=0){
   c.fillStyle="yellow";
 c.fillRect(320,yh,20,20);
 yh++;
-if(yh==700)
+if(yh==750)
 yh=0;
 }
  
@@ -530,14 +530,14 @@ function animatemulti()
     c.font='30px Helvetica';
     c.fillText('SCORE B:'+s2,400,40);
 
-   c.fillRect(x,y-(i*700),w,30);
+   c.fillRect(x,y-(i*760),w,30);
    
   
     if(y>400)
     {
    c.fillRect(x1,y1,w1,30);
    y1+=j1;
-   if(y1>=700)
+   if(y1>=760)
 {
    x1 = Math.floor((Math.random() * 270)+260);
    y1=0;
@@ -754,7 +754,7 @@ if(y>=(700*k))
 
 
 
-  if(( Math.abs(cy1-y+(i*700))<=20 && (cx1>=(x) && cx1<=(x+w)))||( Math.abs(cx1-x)<=20  && (cy1>=(y-(i*700)) && cy1<=(y-(i*700)+30)))||(Math.abs(cy1-y+(i*700))==(Math.sqrt(2)*20) && Math.abs(-(x+w)+cx1)==(Math.sqrt(2)*20)))
+  if(( Math.abs(cy1-y+(i*760))<=20 && (cx1>=(x) && cx1<=(x+w)))||( Math.abs(cx1-x)<=20  && (cy1>=(y-(i*760)) && cy1<=(y-(i*760)+30)))||(Math.abs(cy1-y+(i*760))==(Math.sqrt(2)*20) && Math.abs(-(x+w)+cx1)==(Math.sqrt(2)*20)))
   {    if(s2==0)
       {cancelAnimationFrame(cancelMe);
 
@@ -781,7 +781,7 @@ if(y>=(700*k))
 
 
 
-if( Math.abs(cy2-y+(i*700))<=20 && (cx2>=(x) && cx2<=(x+w)))
+if( Math.abs(cy2-y+(i*760))<=20 && (cx2>=(x) && cx2<=(x+w)))
   { if(s2==0)
       {cancelAnimationFrame(cancelMe);
 
@@ -806,7 +806,7 @@ if( Math.abs(cy2-y+(i*700))<=20 && (cx2>=(x) && cx2<=(x+w)))
 
   }
 
-  if( Math.abs(cx2-x)<=20  && (cy2>=(y-(i*700)) && cy2<=(y-(i*700)+30)))
+  if( Math.abs(cx2-x)<=20  && (cy2>=(y-(i*760)) && cy2<=(y-(i*760)+30)))
   { if(s2==0)
       {cancelAnimationFrame(cancelMe);
 
@@ -834,7 +834,7 @@ if( Math.abs(cy2-y+(i*700))<=20 && (cx2>=(x) && cx2<=(x+w)))
 
 
 
-if(Math.abs(cy2-y+(i*700))==(Math.sqrt(2)*20) && Math.abs(-(x+w)+cx2)==(Math.sqrt(2)*20))
+if(Math.abs(cy2-y+(i*760))==(Math.sqrt(2)*20) && Math.abs(-(x+w)+cx2)==(Math.sqrt(2)*20))
 { if(s2==0)
       {cancelAnimationFrame(cancelMe);
 
